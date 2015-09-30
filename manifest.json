@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "PC Man",
+  "description": "Replace all occurrences of 'man' with 'person'",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["pcman.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": {
+      "38": "icon.png"
+    }
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
