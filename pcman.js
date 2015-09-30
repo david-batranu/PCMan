@@ -1,2 +1,5 @@
-var text = document.body.innerHTML;
-document.body.innerHTML = text.replace(/man/gi, "PERSON");
+findAndReplaceDOMText(document.body, {
+  find: new RegExp('man', 'gi'),
+  replace: 'PERSON'
+  }
+);
